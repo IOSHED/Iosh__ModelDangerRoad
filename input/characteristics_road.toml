@@ -1,0 +1,78 @@
+# Процент попадания в ДТП в прошлом
+# 0 <= x <= 1, где 1 — 100% и 0 — нет статистики
+statistics_accidents_on_road = 0.45
+
+# Влажность покрытия
+# 0 <= x <= 1, где 1 — затопленная дорога
+coating_humidity = 0.1
+
+# Качество покрытия (насколько много ям)
+#  0 <= x <= 1, где 1 — новая дорога
+quality_coating = 0.8
+
+# Загруженность дороги
+# 0 <= x <= 1, где 1 — максимальна загруженность
+traffic_congestion = 0.4
+
+# Ширина дороги
+# [x] = м
+width_road = 8
+
+# Разрешённая максимальная скорость
+# [x] = км/ч
+allowed_max_speed = 50
+
+# Разрешённая минимальная скорость
+# [x] = км/ч
+allowed_min_speed = 0
+
+# Поворотов на дороге
+# 0 <= x <= 1_000
+turns_route = 5
+
+# Углы поворотов на дороге
+# len array == `turns_route`, [array[x]] = градус
+tangles_turns_on_route = "[90, 78, 40, 15, 45]"
+
+# Дорога имеет разметку
+# x == `true` or `false`
+has_marking_applied = true
+
+[our_driver]
+# Уверенность на дороге
+# 0 <= x <= 1, где 1 — максимальна уверенность
+confidence_on_road = 0.95
+
+# Стаж вождения
+# 0 <= x <= 100, [x] = 1 год
+driving_experience = 12
+
+# Возраст водителя
+# 0 <= x <= 100, [x] = 1 год
+age = 36
+
+# Всего дорожных нарушений
+# 0 <= x <= 1_000
+total_traffic_violations = 5
+
+# Всего правонарушений
+# 0 <= x <= 1_000
+total_offenses = 0
+
+# Количество ДТП
+# 0 <= x <= 1_000
+number_accidents = 1
+
+[other_factors]
+# Маргинальность населения
+# 0 <= x <= 1, где 0 — максимальна законопослушность
+marginality_population = 0.2
+
+[other_factors.wind]
+# Направление ветра
+# x == "left" or "right" or "forward" or "front" or "after"
+direction = "left"
+
+# Скорость ветра
+# [x] = м/с
+speed = 3
